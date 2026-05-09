@@ -1,0 +1,30 @@
+{
+  "name": "cse341-node",
+  "version": "1.0.0",
+  "description": "My node backend for CSE341",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/budujoseph/cse341-NODE.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/budujoseph/cse341-NODE/issues"
+  },
+  "homepage": "https://github.com/budujoseph/cse341-NODE#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongodb": "^7.2.0",
+    "nodemon": "^3.1.14"
+  }
+}
