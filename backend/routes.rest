@@ -1,0 +1,2 @@
+GET http://localhost:8080/contacts , this gets all the contacts from the database and returns them as a JSON array. Each contact object in the array contains the following fields: id, name, email, and phone.
+GET http://localhost:8080/contacts/{id} , this gets a specific contact by its id. The {id} in the URL should be replaced with the actual id of the contact you want to retrieve. The response will be a JSON object containing the contact's details.
