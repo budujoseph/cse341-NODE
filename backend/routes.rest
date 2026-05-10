@@ -1,4 +1,4 @@
-### this gets all the contacts from the database and returns them as a JSON array. 
+### This gets all the contacts from the database and returns them as a JSON array. 
 GET http://localhost:8080/contacts
-### this gets a specific contact by its id. The {id} in the URL should be replaced with the actual id of the contact you want to retrieve. The response will be a JSON object containing the contact's details.
+### This gets a specific contact by its id. The {id} in the URL should be replaced with the actual id of the contact you want to retrieve. The response will be a JSON object containing the contact's details.
 GET http://localhost:8080/contacts/{id}
