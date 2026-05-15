@@ -4,11 +4,20 @@ require('dotenv').config();
 const bodyParser = require('body-parser');
 const mongodb = require('./db/connect');
 const contactsRoutes = require('./routes/contacts');
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger.json');
+const cors = require('cors');
+
+app.use(cors());
+
 
 const port = process.env.PORT || 8080;
 const host = process.env.HOST || 'localhost';
-app.use(bodyParser.json());
-app.use('/contacts', contactsRoutes);
+app
+  .use(bodyParser.json())
+  .use('/contacts', contactsRoutes)
+  .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 
 mongodb.initdb(err => {
   if (err) {
