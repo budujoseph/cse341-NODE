@@ -8,13 +8,13 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
 const cors = require('cors');
 
-app.use(cors());
-
 
 const port = process.env.PORT || 8080;
 const host = process.env.HOST || 'localhost';
 app
   .use(bodyParser.json())
+  .use(bodyParser.urlencoded({ extended: true }))
+  .use(cors())
   .use('/contacts', contactsRoutes)
   .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
