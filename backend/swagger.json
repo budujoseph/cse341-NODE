@@ -19,7 +19,13 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Contact Retrieved Successfully"
+          }, 
+          "404": {
+            "description": "Contacts retrieval unsuccessful"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -53,7 +59,10 @@
         ],
         "responses": {
           "201": {
-            "description": "Created"
+            "description": "Contact Created Successfully"
+          },
+          "404": {
+            "description": " Creation Unsuccessful"
           },
           "500": {
             "description": "Internal Server Error"
@@ -77,7 +86,13 @@
         ],
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Contact Retrieved Successfully"
+          },
+          "404": {
+            "description": "Contact Not Found"
+          },
+          "500": {
+            "description": "Internal Server Error"
           }
         }
       },
@@ -117,7 +132,7 @@
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Contact Updated Successfully"
           },
           "500": {
             "description": "Internal Server Error"
@@ -136,7 +151,7 @@
         ],
         "responses": {
           "204": {
-            "description": "No Content"
+            "description": "Contact Deleted Successfully"
           },
           "500": {
             "description": "Internal Server Error"
