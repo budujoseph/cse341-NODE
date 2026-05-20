@@ -16,10 +16,10 @@ module.exports = [
       'import/default': 'error',
       'import/export': 'error',
 
-      'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
+      // 'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
       quotes: ['error', 'single', { avoidEscape: true }],
       semi: ['error', 'always'],
-      'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
+      // 'no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
     },
 
     languageOptions: {

@@ -23,6 +23,7 @@
           }, 
           "404": {
             "description": "Contacts retrieval unsuccessful"
+
           },
           "500": {
             "description": "Internal Server Error"

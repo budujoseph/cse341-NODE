@@ -11,6 +11,9 @@ const cors = require('cors');
 
 const port = process.env.PORT || 8080;
 const host = process.env.HOST || 'localhost';
+
+
+
 app
   .use(bodyParser.json())
   .use(bodyParser.urlencoded({ extended: true }))
@@ -18,6 +21,16 @@ app
   .use('/contacts', contactsRoutes)
   .use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
+//Error handling middleware
+app.use((err, req, res, next) => {
+  res.status(err.status || 500)
+  res.send({
+    error: {
+      status: err.status || 500,
+      message: err.message
+    }
+  })
+})
 
 mongodb.initdb(err => {
   if (err) {

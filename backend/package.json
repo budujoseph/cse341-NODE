@@ -29,7 +29,9 @@
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
+    "http-errors": "^2.0.1",
     "mongodb": "^7.2.0",
+    "mongoose": "^9.6.2",
     "nodemon": "^3.1.14",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-dist": "^5.32.6",
@@ -41,6 +43,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.5",
+    "express-validator": "^7.3.2",
     "globals": "^17.6.0",
     "prettier": "^3.8.3",
     "swagger-autogen": "^2.23.7"
